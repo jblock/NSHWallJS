@@ -1,4 +1,5 @@
 compress_assets: off
+rewrite_relative_paths: off
 
 # Will add more stuff later. Gonna add a Sinatra server
 # that acts as a middleman and can serve assets
