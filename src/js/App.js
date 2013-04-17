@@ -1,7 +1,7 @@
 Robowall.App = (function() {
   function App() {}
 
-  App.prototype.debug = 0;
+  App.prototype.debug = 1;
 
   App.prototype.events = _.extend(Robowall.Events, Backbone.Events);
 

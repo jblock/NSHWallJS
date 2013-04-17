@@ -11,3 +11,11 @@ Robowall.app.init();
 $(function() {
   return Robowall.app.events.t('dom:onload');
 });
+
+var container = document.querySelector('#tileContainer');
+var pckry = new Packery( container, {
+  // options
+  itemSelector: '.thumbnail',
+  gutter: 10,
+  columnWidth: 245
+});

@@ -18,6 +18,7 @@ javascripts:
     - src/js/libs/jquery.min.js
     - src/js/libs/lodash.custom.min.js
     - src/js/libs/backbone.min.js
+    - src/js/libs/packery.min.js
 
   # This is our Backbone application.
   # We combine all the different bits and pieces into a coherent whole.
