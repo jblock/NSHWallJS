@@ -1,0 +1,35 @@
+compress_assets: off
+
+# Will add more stuff later. Gonna add a Sinatra server
+# that acts as a middleman and can serve assets
+
+stylesheets:
+  main:
+    - src/css/*.css
+
+# JS
+javascripts:
+  # Make a separate file consisting of external libraries.
+  # We include the whole _lib directory here by default.
+  #
+  # If load order is important, for example is you have jQuery here, 
+  # instead of the splat, list all the files in the order you desire.
+  common:
+    - src/js/libs/jquery.min.js
+    - src/js/libs/lodash.custom.min.js
+    - src/js/libs/backbone.min.js
+
+  # This is our Backbone application.
+  # We combine all the different bits and pieces into a coherent whole.
+  #
+  # Note that order is paramount here. 
+  # Add your own files as you please, but keep in mind the sequence.
+  app:
+    - src/js/Namespace.js
+    - src/js/models/**/*.js
+    - src/js/views/**/*.js
+    - src/js/Router.js
+    - src/js/Events.js
+    - src/js/App.js
+    - src/js/Log.js
+    - src/js/Init.js
